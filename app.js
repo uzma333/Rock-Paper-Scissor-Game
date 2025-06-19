@@ -23,8 +23,21 @@ const shoWinner=(userWin,userChoice,compChoice)=>{
         msg.innerText=`You lose ${compChoice} beats Your ${userChoice}`
         msg.style.backgroundColor="red"
     }
+    msg.classList.remove("bounce", "drop");
+     void msg.offsetWidth;
+     msg.style.opacity = "1";
 
+    if (userWin) {
+    msg.classList.add("bounce");
+  } else {
+    msg.classList.add("drop");
+  }
+    setTimeout(() => {
+    msg.classList.remove("bounce", "drop");
+  }, 900); // match with animation duration
 }
+
+
 
 const genCompChoice=()=>{
     const options=["rock","paper","scissor"]
