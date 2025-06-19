@@ -4,6 +4,14 @@
     text-align: center;
 }
 
+body{
+    background-image: url('/assets/backgroundImg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
 .heading{
     background-color: #081b31;
     color: white;
